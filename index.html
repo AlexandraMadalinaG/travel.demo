@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="Booking your holiday" />
+        <meta name="keywords" content="travel, agency, world, travellers, trip, holiday, booking" />
+        <meta name="author" content="Alexandra" />
+        <link rel="icon" type="image/x-ixon" href="img/favicon.ico" />
+        <title>Travelicious</title>
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="./style.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+            integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+    <body>
+        <!--Navbar-->
+        <header id="header">
+            <div id="menu-bar" class="fas fa-bars"></div>
+
+            <a href="#" class="logo"><span>Travel</span>icious</a>
+            <nav class="navbar">
+                <a href="#home">Home</a>
+                <a href="#book">Book</a>
+                <a href="#packages">Packages</a>
+                <a href="#services">Services</a>
+                <a href="#gallery">Gallery</a>
+                <a href="#contact">Contact</a>
+            </nav>
+
+            <div class="icons">
+                <i class="fas fa-search" id="search-btn"></i>
+                <i class="fas fa-user" id="login-btn"></i>
+            </div>
+
+            <form action="" class="search-bar-container">
+                <input type="search" id="search-bar" placeholder="Your holiday" />
+                <label for="search-bar" class="fas fa-search"></label>
+            </form>
+        </header>
+
+        <!--Navbar end-->
+
+        <!--login form start-->
+        <div class="login-form-container">
+            <i class="fas fa-times" id="form-closed"></i>
+            <form action="">
+                <h3>Login</h3>
+                <input type="email" class="box" placeholder="Your email" />
+                <input type="password" class="box" placeholder="Your password" />
+                <input type="submit" class="btn" value="Login" />
+                <input type="checkbox" id="remember" />
+                <label for="remember">Remember me</label>
+                <p>Forgot your password? <a href="#">Click here</a></p>
+                <p>Don't have an account? <a href="#">Register now</a></p>
+            </form>
+        </div>
+        <!--login form end-->
+
+        <!--home start-->
+        <section class="home" id="home">
+            <div class="content">
+                <h3>Your holiday is our business</h3>
+                <p>Discover new places with Travelicious</p>
+                <a href="#" class="btn">Discover now</a>
+            </div>
+
+            <div class="controls">
+                <span class="vid-btn active" data-src="img/video-1.mp4"></span>
+                <span class="vid-btn" data-src="img/video-2.mp4"></span>
+                <span class="vid-btn" data-src="img/video-3.mp4"></span>
+                <span class="vid-btn" data-src="img/video-4.mp4"></span>
+                <span class="vid-btn" data-src="img/video-5.mp4"></span>
+            </div>
+
+            <div class="video-container">
+                <video src="img/video-1.mp4" id="video-slider" loop autoplay muted></video>
+            </div>
+        </section>
+        <!--home end-->
+
+        <!--booking start-->
+        <section class="book" id="book">
+            <h1 class="heading">
+                <span>B</span>
+                <span>o</span>
+                <span>o</span>
+                <span>k</span>
+                <span class="space"></span>
+                <span>N</span>
+                <span>o</span>
+                <span>w</span>
+            </h1>
+
+            <div class="row">
+                <div class="img">
+                    <img src="img/travel-img.jpg" alt="traveling illustation" />
+                </div>
+                <form action="">
+                    <div class="inputBox">
+                        <h3>Your destination</h3>
+                        <input type="text" placeholder="Your destination" />
+                    </div>
+
+                    <div class="inputBox">
+                        <h3>Passengers</h3>
+                        <input type="number" placeholder="Number of guests" />
+                    </div>
+
+                    <div class="inputBox">
+                        <h3>Arrivals</h3>
+                        <input type="date" />
+                    </div>
+
+                    <div class="inputBox">
+                        <h3>Leaving</h3>
+                        <input type="date" />
+                    </div>
+                    <input type="submit" class="btn" value="Book Now" />
+                </form>
+            </div>
+        </section>
+        <!--booking end-->
+
+        <!--packages start-->
+        <section class="packages" id="packages">
+            <h1 class="heading">
+                <span>O</span>
+                <span>u</span>
+                <span>r</span>
+                <span class="space"></span>
+                <span>P</span>
+                <span>a</span>
+                <span>c</span>
+                <span>k</span>
+                <span>a</span>
+                <span>g</span>
+                <span>e</span>
+                <span>s</span>
+            </h1>
+
+            <div class="box-container">
+                <div class="box">
+                    <img src="img/maldives-img.jpg" alt="maldives resort" />
+                    <div class="content">
+                        <h3><i class="fas fa-map-marker-alt"></i>Maldives</h3>
+                        <p>This is a great place for your relaxing and...</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+
+                        <div class="price">789£ (5 nights) <span>989£</span></div>
+                        <a href="#" class="btn">Book Now</a>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <img src="img/norway-img.jpg" alt="norway resort" />
+                    <div class="content">
+                        <h3><i class="fas fa-map-marker-alt"></i>Norway</h3>
+                        <p>Norway is the perfect place to discover new things.</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+
+                        <div class="price">649£ (4 nights) <span>1050£</span></div>
+                        <a href="#" class="btn">Book Now</a>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <img src="img/lakecomo-img.jpg" alt="Lake Como" />
+                    <div class="content">
+                        <h3><i class="fas fa-map-marker-alt"></i>Lake Como - Italy</h3>
+                        <p>The landscapes here will make you come back a second time.</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+
+                        <div class="price">899£ (7 nights) <span>1200£</span></div>
+                        <a href="#" class="btn">Book Now</a>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <img src="img/bali-img.jpg" alt="bali resort" />
+                    <div class="content">
+                        <h3><i class="fas fa-map-marker-alt"></i>Bali</h3>
+                        <p>Are you ready for the sun? The sun never leaves here.</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+
+                        <div class="price">589£ (5 nights) <span>749£</span></div>
+                        <a href="#" class="btn">Book Now</a>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <img src="img/santorini-img.jpg" alt="Santorini" />
+                    <div class="content">
+                        <h3><i class="fas fa-map-marker-alt"></i>Santorini - Greece</h3>
+                        <p>
+                            Greece...A fascinating place for its history, but also for its
+                            landscapes.
+                        </p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+
+                        <div class="price">749£ (6 nights) <span>880£</span></div>
+                        <a href="#" class="btn">Book Now</a>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <img src="img/thailand-img.jpg" alt="thailand resort" />
+                    <div class="content">
+                        <h3><i class="fas fa-map-marker-alt"></i>Thailand</h3>
+                        <p>Unique cultures and wonderful people.</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+
+                        <div class="price">599£ (5 nights) <span>700£</span></div>
+                        <a href="#" class="btn">Book Now</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--packages end -->
+
+        <!--services start-->
+        <section class="services" id="services">
+            <h1 class="heading">
+                <span>S</span>
+                <span>e</span>
+                <span>r</span>
+                <span>v</span>
+                <span>i</span>
+                <span>c</span>
+                <span>e</span>
+                <span>s</span>
+            </h1>
+
+            <div class="box-container">
+                <div class="box">
+                    <i class="fas fa-hotel"></i>
+                    <h3>Hotels booking without any problems</h3>
+                    <p>
+                        Travelicious offers you a variety of hotels from all over the world. Whether
+                        you want to go to the sea, the mountains or even in the middle of the city,
+                        we are your solution to book the best hotel without any problems..
+                    </p>
+                </div>
+
+                <div class="box">
+                    <i class="fas fa-utensils"></i>
+                    <h3>Food and drinks</h3>
+                    <p>
+                        We offer hotels with breakfast included, we recommend famous restaurants
+                        with unique dishes and we recommend the most unique traditional dishes.
+                    </p>
+                </div>
+
+                <div class="box">
+                    <i class="fas fa-bullhorn"></i>
+                    <h3>Safe tourist guide</h3>
+                    <p>
+                        For a successful vacation, safety comes first. Our tourist guides are always
+                        accompanied by doctors who will offer you help if you need it. We will
+                        respect the safety rules, and your trip will be without incident.
+                    </p>
+                </div>
+
+                <div class="box">
+                    <i class="fas fa-globe-europe"></i>
+                    <h3>Around the world with us</h3>
+                    <p>
+                        We have a wide variety of tourist packages at excellent prices. The whole
+                        world is in our hands, and we want you to discover it.
+                    </p>
+                </div>
+
+                <div class="box">
+                    <i class="fas fa-plane"></i>
+                    <h3>Tickets flies</h3>
+                    <p>
+                        Our flights are the cheapest and we always try to have prices for everyone.
+                        Everyone must see this beautiful world.
+                    </p>
+                </div>
+
+                <div class="box">
+                    <i class="fas fa-hiking"></i>
+                    <h3>Unique experiences</h3>
+                    <p>
+                        We offer you unique experiences. Whether you want to see elephants, ride a
+                        camel or eat local food, we will make you feel these experiences for real.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <!--services end-->
+
+        <!--gallery start-->
+        <section class="gallery" id="gallery">
+            <h1 class="heading">
+                <span>G</span>
+                <span>a</span>
+                <span>l</span>
+                <span>l</span>
+                <span>e</span>
+                <span>r</span>
+                <span>y</span>
+            </h1>
+
+            <div class="box-container">
+                <div class="box">
+                    <img src="img/gallery1.jpg" alt="" />
+                    <div class="content">
+                        <h3>Lake Como</h3>
+                        <p>
+                            Framed against a breathtaking landscape of steep, pine-swathed
+                            mountains, Lake Como is famed for its atmospheric sense of calm and
+                            elegance.
+                        </p>
+                        <a href="#" class="btn">See more</a>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <img src="img/gallery2.jpg" alt="" />
+                    <div class="content">
+                        <h3>Bali</h3>
+                        <p>
+                            Of all the 17,500 islands in Indonesia, Bali shouts the loudest. It’s
+                            dubbed the Island of the Gods, and you’ll see their handiwork wherever
+                            you roam.
+                        </p>
+                        <a href="#" class="btn">See more</a>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <img src="img/gallery3.jpg" alt="" />
+                    <div class="content">
+                        <h3>Maldives</h3>
+                        <p>
+                            Floating in the Indian Ocean, the Maldives are the cream of the crop
+                            when it comes to secluded beach holidays. The waters are their own brand
+                            of blue, the sands are blindingly white, and...
+                        </p>
+                        <a href="#" class="btn">See more</a>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <img src="img/gallery4.jpg" alt="" />
+                    <div class="content">
+                        <h3>Amsterdam</h3>
+                        <p>
+                            Amsterdam’s storybook scenery is instantly recognisable. The city’s
+                            packed full of narrow streets and canals – it’s a great place to get
+                            lost in.
+                        </p>
+                        <a href="#" class="btn">See more</a>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="img/gallery5.jpg" alt="" />
+                    <div class="content">
+                        <h3>Norway</h3>
+                        <p>
+                            Norway’s mountains, fjords and Arctic tundra do much to stir the
+                            imagination. And, come winter, it’s blanketed in soft white powder
+                            making for postcard-worthy vistas at every turn and...
+                        </p>
+                        <a href="#" class="btn">See more</a>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="img/gallery6.jpg" alt="" />
+                    <div class="content">
+                        <h3>Paris</h3>
+                        <p>
+                            Not many cities can rival Paris in the culture stakes. Its hundreds upon
+                            hundreds of museums, monuments, and gardens mean no two trips here are
+                            the same.
+                        </p>
+                        <a href="#" class="btn">See more</a>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="img/gallery7.jpg" alt="" />
+                    <div class="content">
+                        <h3>Cappadocia</h3>
+                        <p>
+                            Shaped by wind and water, the rock formations, rock-hewn churches, cave
+                            dwellings and underground cities of Cappadocia are...
+                        </p>
+                        <a href="#" class="btn">See more</a>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="img/gallery8.jpg" alt="" />
+                    <div class="content">
+                        <h3>Rome</h3>
+                        <p>
+                            The ancient Romans were on the money when they nicknamed this place the
+                            Eternal City. They believed it would survive forever, and...
+                        </p>
+                        <a href="#" class="btn">See more</a>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="img/gallery9.jpg" alt="" />
+                    <div class="content">
+                        <h3>London</h3>
+                        <p>
+                            World-class museums, a fusion of cultures and traditions, plus iconic
+                            landmarks – there's no wonder London welcomes millions of visitors each
+                            year.
+                        </p>
+                        <a href="#" class="btn">See more</a>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="img/gallery10.jpg" alt="" />
+                    <div class="content">
+                        <h3>Portofino</h3>
+                        <p>
+                            Along with fantastic food, holidays to Italy serve up pinch-yourself
+                            scenery, impossibly pretty towns and no end of ancient sights. The good
+                            life Postcard-perfect scenery, café-backed beaches and cities stacked
+                            with big-name sights – long-legged Italy...
+                        </p>
+                        <a href="#" class="btn">See more</a>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="img/gallery11.jpg" alt="" />
+                    <div class="content">
+                        <h3>Venice</h3>
+                        <p>
+                            Venice is a city that breaks conventions. Grand palaces teeter on the
+                            edge of winding canals, bridges seem to levitate over water, and whole
+                            streets disappear at high tide. More than 100 islands form the city,
+                            grouped together in 16 sestieres, or districts.
+                        </p>
+                        <a href="#" class="btn">See more</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--gallery end-->
+
+        <!-- contact start-->
+        <section class="contact" id="contact">
+            <h1 class="heading">
+                <span>C</span>
+                <span>o</span>
+                <span>n</span>
+                <span>t</span>
+                <span>a</span>
+                <span>c</span>
+                <span>t</span>
+            </h1>
+
+            <div class="row">
+                <div class="img">
+                    <img src="img/contact-us.jpg" alt="contact" />
+                </div>
+
+                <form action="">
+                    <div class="inputBox">
+                        <input type="text" placeholder="Your name" />
+                        <input type="email" placeholder="Your email" />
+                    </div>
+                    <div class="inputBox">
+                        <input type="number" placeholder="Your phone number" />
+                        <input type="text" placeholder="Subject" />
+                    </div>
+                    <textarea placeholder="Your message" name="" cols="30" rows="10"></textarea>
+                    <input type="submit" class="btn" value="Send message" />
+                </form>
+            </div>
+        </section>
+        <!--contact end-->
+
+        <!--footer start-->
+        <section class="footer">
+            <div class="box-container">
+                <div class="box">
+                    <h3>About us</h3>
+                    <p>
+                        We are Travelicious, your soul travel agency. We provide you with the
+                        perfect vacation and you bring the fun. We are at your disposal 24/7 to make
+                        your vacation a dream.
+                    </p>
+                </div>
+                <div class="box">
+                    <h3>Popular locations</h3>
+                    <a href="#">Maldives</a>
+                    <a href="#">Italy</a>
+                    <a href="#">Spain</a>
+                    <a href="#">UK</a>
+                    <a href="#">Grecee</a>
+                    <a href="#">Norway</a>
+                </div>
+                <div class="box">
+                    <h3>Links</h3>
+                    <a href="#home">Home</a>
+                    <a href="#book">Book</a>
+                    <a href="#packages">Packages</a>
+                    <a href="#services">Services</a>
+                    <a href="#gallery">Gallery</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <div class="box">
+                    <h3>Follow us</h3>
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+            <h1 class="credit">created by <span>Travelicious</span> | all rights reserved</h1>
+        </section>
+
+        <script src="./script.js"></script>
+    </body>
+</html>
